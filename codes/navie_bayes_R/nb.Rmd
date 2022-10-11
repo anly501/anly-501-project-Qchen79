@@ -1,17 +1,19 @@
 ---
 title: "hw3"
 author: "Qian Chen"
-subtitle: "501 hw2.1"
-
+subtitle: 501 hw2.1
 output:
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
   html_document:
     fig_caption: yes
     number_sections: yes
     self_contained: yes
     theme: flatly
-    toc: true
+    toc: yes
     toc_depth: 3
-    toc_float: true
+    toc_float: yes
     code_folding: hide
 ---
 
@@ -90,7 +92,6 @@ cm=table(TRAINING$group,pred)
 cm
 confusionMatrix(cm)
 
-#install.packages("gmodels")
 library(gmodels)
 
 CrossTable(pred, TRAINING$group,
@@ -98,6 +99,16 @@ CrossTable(pred, TRAINING$group,
            dnn = c('predicted', 'actual'))
 
 ```
+
+```{r}
+library(pheatmap)
+pheatmap(cm,
+  cluster_cols = F, cluster_rows = F, scale = "none",
+  treeheight_col = 0, treeheight_row = 0,
+  display_numbers = T,
+  border_color = "black")
+```
+
 
 <br>
 
@@ -121,8 +132,21 @@ CrossTable(pred, TESTING$group,
            prop.chisq = FALSE, prop.t = FALSE, prop.r = FALSE,
            dnn = c('predicted', 'actual'))
 
+
+```
+```{r,error=FALSE,message=FALSE,warning=FALSE}
+
+library(pheatmap)
+pheatmap(cm,
+  cluster_cols = F, cluster_rows = F, scale = "none",
+  treeheight_col = 0, treeheight_row = 0,
+  display_numbers = T,
+  border_color = "black")
+ 
 ```
 
+ By mapping heat, confusion matrices can be better visualized.
+ 
 <br>
 
 # Summarize
