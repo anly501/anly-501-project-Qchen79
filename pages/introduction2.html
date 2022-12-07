@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>501 project</title>
+
+    <!-- point to css stylesheet -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+
+<body>
+
+    <img src="./images/logo.jpg" alt="" class="logo">
+    <img src="./images/font.jpg" alt="" class="font">
+
+    <!-- HEADER BAR -->
+    <ul>
+        <!-- link back to homepage -->
+        <li><a href="./index.html">About me</a></li>
+
+        <!-- link back to introduction -->
+        <li><a href="./introduction2.html">Introduction</a></li>
+
+
+        <!-- tab without dropdown  -->
+        <li><a href="https://github.com/anly501/anly-501-project-Qchen79.git">Code</a></li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="https://github.com/anly501/anly-501-project-Qchen79/tree/main/codes/01-data-gathering">Data</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./Datagathering.html">Data Gathering</a>
+        </li>
+
+
+        <!-- tab without dropdown  -->
+        <li><a href="./Datacleaning.html">Data Cleaning</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./Exploringdata.html">Exploring Data</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./Naive_bayes.html">Naive Bayes</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./SVM.html">SVM</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./DT.html">Decision tree</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./clustering.html">Clustering</a>
+        </li>
+
+
+        <!-- tab without dropdown  -->
+        <li><a href="./ARM.html">ARM</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./conclusion.html">Conclusion</a>
+        </li>
+
+    </ul>
+
+    <div id="introduction" class="section level1">
+        <h1 style="color:blue;">Introduction</h1>
+        <h3 style="color:rgb(47, 47, 176);">How do we treat depression</h3>
+
+
+        </p>
+        Depression, also known as Major Depressive Disorder (MDD), is the leading cause of disability in the world,
+        and it is a very common disorder that. It causes a persistent sense of emotional sadness and makes it difficult
+        to do other jobs. The onset of depression is not limited by age, race, or physical health. Depression can also
+        lead to other mental illnesses and can have serious consequences. The reason why I want to explore this topic is
+        because it takes a long time to find effective treatments for depression. Even though there are many treatments
+        available that have been proven to be effective. However, not all methods are effective for different people.
+        Sometimes multiple treatments have to be tried to find one that works, but this can be a very time-consuming and
+        frustrating process. The risk of recurrence of depression during this process is high as well as the financial
+        constraints. So far, we still can't say that there is one approach that is the most effective but is there one
+        approach that will allow most people to alleviate their depressive symptoms. And it can reduce the burden
+        without excessive risk of relapse and financial difficulties.
+        </p>
+
+        </p>
+        More than 9 million commercially insured Americans have been diagnosed with depression - a number that has
+        climbed 33 percent since 2013. In fact, 89 percent of American adults say depression is a very serious or
+        somewhat serious condition. Yet, 2 million of those diagnosed with depression in 2016 did not seek treatment. As
+        more and more medication and behavioral treatment options become available, it is critical to connect people
+        with personalized treatment that works for them.
+        <tr>
+            <td><a href="https://www.bcbs.com/the-health-of-america/articles/two-million-commercially-insured-americans-diagnosed-major-depression-not-seeking-treatment"
+                    target="_blank">source</a></td>
+        </tr>
+        </p>
+
+        </p>
+        So therefore I used some data that can find out which treatment are the most effective for the Major
+        Depression Disorder. And by applying different method on it I will try to give some suggestion about treatment
+        for the patients.
+        </p>
+
+        <td>
+            <img src="./images/intro1.png" width="550" height="500">
+        </td>
+
+        <h4 style="color:rgb(47, 47, 176);"> Question that I will answer in this project: </h4>
+
+        </p>
+        1. Do we have effective way to treat depression.
+        </p>
+
+        </p>
+        2. Is there a most common way to treat depression?
+        </p>
+
+        <h4 style="color:rgb(47, 47, 176);"> Question that are very important to Major Depressive Disorder (MDD): </h4>
+
+        </p>
+        1. How many people can get rid of depression? And what treatment do they have
+        </p>
+
+        </p>
+        2. How do we measure if a treatment is effective?
+        </p>
+
+        </p>
+        3. Is there treatment difference between different country? Like US and China
+        </p>
+
+        </p>
+        4. Usually how many treatments patient need to try to find the best one?
+        </p>
+
+        </p>
+        5. whether it is possible that no treatment will work for a person.
+        </p>
+
+        </p>
+        6. How do we diagnose someone as MDD?
+        </p>
+
+        </p>
+        7. Can surgery be used to completely treat depression?
+        </p>
+
+        </p>
+        8. Is there a high probability of relapse? Is there a high likelihood of worsening depression?
+        </p>
+
+        </p>
+        9. How depression treatment affects your daily life?
+        </p>
+
+        </p>
+        10. Do patients with depression have the same characteristics
+        </p>
+    </div>
+
+
+
+
+    </div>
+
+    <script>
+        // add bootstrap table styles to pandoc tables
+        function bootstrapStylePandocTables() {
+            $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+        }
+        $(document).ready(function () {
+            bootstrapStylePandocTables();
+        });
+    </script>
+
+    <!-- tabsets -->
+
+    <script>
+        $(document).ready(function () {
+            window.buildTabsets("TOC");
+        });
+
+        $(document).ready(function () {
+            $('.tabset-dropdown > .nav-tabs > li').click(function () {
+                $(this).parent().toggleClass('nav-tabs-open');
+            });
+        });
+    </script>
+
+    <!-- code folding -->
+
+
+    <!-- dynamically load mathjax for compatibility with self-contained -->
+    <script>
+        (function () {
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+            document.getElementsByTagName("head")[0].appendChild(script);
+        })();
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>501 project</title>
+
+    <!-- point to css stylesheet -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+
+<body>
+
+    <!-- <div class="box"> -->
+    <!-- <div class="center"> -->
+    <img src="./images/logo.jpg" alt="" class="logo">
+    <img src="./images/font.jpg" alt="" class="font">
+    <ul>
+        <li>
+            <!-- <a href="./index.html"><img src="./images/logo.jpg" alt=""></a> -->
+        </li>
+
+        <!-- link back to homepage -->
+        <li><a href="./index.html">About me</a></li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./introduction2.html">Introduction</a></li>
+
+
+        <!-- tab without dropdown  -->
+        <li><a href="https://github.com/anly501/anly-501-project-Qchen79.git">Code</a></li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="https://github.com/anly501/anly-501-project-Qchen79/tree/main/codes/01-data-gathering">Data</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./Datagathering.html">Data Gathering</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./Datacleaning.html">Data Cleaning</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./Exploringdata.html">Exploring Data</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./Naive_bayes.html">Naive Bayes</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./SVM.html">SVM</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./DT.html">Decision tree</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./clustering.html">Clustering</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./ARM.html">ARM</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./conclusion.html">Conclusion</a>
+        </li>
+
+
+
+    </ul>
+
+    <table>
+        <tr>
+            <th>Python code for ARM</th>
+        </tr>
+
+
+        <tr>
+
+            <td><a href="https://docs.google.com/spreadsheets/d/1uPrHT8jqvzwoaMmf_DjEWRZqzsKunjE0rPJMpBuf6mM/edit#gid=1863229840"
+                    target="_blank">Cleaned data</a></td>
+
+        </tr>
+
+        <tr>
+            <td><a href="https://colab.research.google.com/drive/1izGfx54ShBMlbY2KmS0Gs4hceE8Sk04M#scrollTo=F58pt52QBU0r"
+                    target="_blank">Python Code to ARM </a></td>
+        </tr>
+    </table>
+
+    <h1 style="color:#0e0e10; text-align:justify; ">
+        <font size="5"><b>Introduction</b></font>
+    </h1>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        In this section I will use ARM method to find out which two methods will occur together the most.
+    <p>
+
+    <h1 style="color:#0e0e10; text-align:justify; ">
+        <font size="5"><b>Method about ARM</b></font>
+    </h1>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        ARM also called Association rule mining. As you can see from the name, it simply helps discover relationships
+        between seemingly independent relational databases or other data repositories. Which helps identify the
+        dependencies between two data items. Based on the dependency, it then maps accordingly so that it can be more
+        profitable.
+
+        Most machine learning algorithms work with numeric datasets and hence tend to be mathematical. However,
+        association rule mining is suitable for non-numeric, categorical data. And this is different from all the
+        previous method that I'm using.
+    <p>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        So what metrics that are in the ARM?
+    <p>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        Support: Sup(A, B): Measures How often item-set with A and items in B occur together relative to all other
+        transactions.
+    <p>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        Confidence: Conf(A, B) Measures how often items in A and items in B occur together, relative to transactions
+        that contain A.
+    <p>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        Lift: The lift of a rule is the ratio of the observed support to that expected if X and Y were independent.
+        And when the lift result is 1 it means two factors are independent. If the lift result is less than 1 it means
+        two factors are negatively related. If the lift result is greater than 1 it means two factors are positively
+        related.
+    <p>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        And there are mainly three different types of algorithms that can be used to generate associate rules in data
+        mining.
+    <p>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        Apriori Algorithm: Apriori algorithm identifies the frequent individual items in a given database and then
+        expands them to larger item sets, keeping in check that the item sets appear sufficiently often in the database.
+    <p>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        Eclat Algorithm: ECLAT algorithm is also known as Equivalence Class Clustering and bottomup. Latice Traversal is
+        another widely used method for associate rule in data mining. Some even consider it to be a better and more
+        efficient version of the Apriori algorithm.
+    <p>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        FP-growth Algorithm: Also known as the recurring pattern, this algorithm is particularly useful for finding
+        frequent patterns without the need for candidate generation. It mainly operates in two stages namely, FP-tree
+        construction and extract frequently used item sets.
+    <p>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        And here I use Apriori Algorithm to solve the problem.
+    <p>
+
+
+    <h1 style="color:#0e0e10; text-align:justify; ">
+        <font size="5"><b>Result</b></font>
+    </h1>
+
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        Here is the result, since I have too many variables here And the plot looks too crowded. So I also use a table
+        to show the result. And the lift for the top 10 are all greater than 1 which means it all are positive related.
+        And the most related lift are the CITALOPRAM and ESCITALOPRAM which is about 14.622541. And the second method is
+        CITALOPRAM and SERTRALINE which is about 12.202691. The third is CITALOPRAM and ESCITALOPRAM which is about
+        11.136821. And fourth is ESCITALOPRAM and SERTRALINE which is about 10.900598.
+    <p>
+
+
+        <td>
+            <img src="./images/ARM1.png" width="800" height="800">
+        </td>
+
+
+
+        <td>
+            <img src="./images/ARM2.png" width="800" height="500">
+        </td>
+
+
+    <h1 style="color:#0e0e10; text-align:justify; ">
+        <font size="5"><b>Conclusion</b></font>
+    </h1>
+
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+
+    <p>
+
+
+</body>
+
+</html>

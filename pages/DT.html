@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>501 project</title>
+
+    <!-- point to css stylesheet -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+
+<body>
+
+    <!-- <div class="box"> -->
+    <!-- <div class="center"> -->
+    <img src="./images/logo.jpg" alt="" class="logo">
+    <img src="./images/font.jpg" alt="" class="font">
+    <ul>
+        <li>
+            <!-- <a href="./index.html"><img src="./images/logo.jpg" alt=""></a> -->
+        </li>
+
+        <!-- link back to homepage -->
+        <li><a href="./index.html">About me</a></li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./introduction2.html">Introduction</a></li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="https://github.com/anly501/anly-501-project-Qchen79.git">Code</a></li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="https://github.com/anly501/anly-501-project-Qchen79/tree/main/codes/01-data-gathering">Data</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./Datagathering.html">Data Gathering</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./Datacleaning.html">Data Cleaning</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./Exploringdata.html">Exploring Data</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./Naive_bayes.html">Naive Bayes</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./SVM.html">SVM</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./DT.html">Decision tree</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./clustering.html">Clustering</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./ARM.html">ARM</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./conclusion.html">Conclusion</a>
+        </li>
+
+    </ul>
+
+    <table>
+        <tr>
+            <th>Python code for Decision Tree</th>
+        </tr>
+
+
+        <tr>
+
+            <td><a href="https://docs.google.com/spreadsheets/d/1uPrHT8jqvzwoaMmf_DjEWRZqzsKunjE0rPJMpBuf6mM/edit#gid=1863229840"
+                    target="_blank">Cleaned data</a></td>
+
+        </tr>
+
+        <tr>
+            <td><a href="https://colab.research.google.com/drive/1AJGnHzXsPGN_VmE0_d6VANJ-jqhsFfXP#scrollTo=GNxEMus5AZ5z"
+                    target="_blank">Python Code to Decision Tree </a></td>
+        </tr>
+    </table>
+
+    <h1 style="color:#0e0e10; text-align:justify; ">
+        <font size="5"><b>Method about Decision Tree</b></font>
+    </h1>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        Decision tree is a flowchart that shows a clear pathway to make decision. In data analytics field, it helps to
+        classify data. There are several important parts: root nodes, leaf nodes, internal nodes, splitting and pruning.
+    <p>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        A decision tree starts at a node then splits in two or more directions. The start nodes are called root nodes
+        and each split one called internal nodes. The final decisions are called leaf nodes show the end of a decision
+        path. The process from root nodes to internal nodes to leaf nodes are called splitting. Each branch offers
+        different possible outcomes, incorporating a variety of decisions and chance events until an outcome is
+        achieved. Pruning is when tree grows branches, we don't need, we cut them off.
+    <p>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        There are some drawbacks for decision trees that this method is not suitable for all types of data, for example
+        when the main goal is to predict the outcome of a continuous variable. Because decision trees tend to lose
+        information when categorizing variables into multiple categories. Second, decision tree might overfit the
+        training data which will cause high variability.
+    <p>
+
+
+    <h1 style="color:#0e0e10; text-align:justify; ">
+        <font size="5"><b>Result</b></font>
+    </h1>
+
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        I test three drugs using decision tree method which are AMITRIPTYLINE, BUPROPION, and CITALOPRAM. For the
+        AMITRIPTYLINE the accuracy is about 82.4% and, in the group old women and young men have the highest and same f1
+        score which is 0.84. For the BUPROPION the accuracy is about 64.7% and, in the group young women have the
+        highest f1 score 0.67. For the CITALOPRAM the accuracy is about 71.5% and, in the group young women have the
+        highest f1 score 0.78.
+    <p>
+
+
+        <td>
+            <img src="./images/DT1.png" width="800" height="800">
+        </td>
+
+
+    <h1 style="color:#0e0e10; text-align:justify; ">
+        <font size="5"><b>Conclusion</b></font>
+    </h1>
+
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        The decision tree model is best fit for drug AMITRIPTYLINE compared to the other 2 drugs. Since AMITRIPTYLINE
+        have the highest accuracy score which is 82.4%. So, AMITRIPTYLINE is the most affective drug among those 3
+        drugs.
+    <p>
+
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        And AMITRIPTYLINE has the most significant effect on old women and young men. The drug BUPROPION and CITALOPRAM
+        both have the most significant effect on young women. However, the BUPROPION accuracy is only about 64.7%. I
+        would say this method may not be very effective for depression treatment.
+    <p>
+</body>
+
+</html>

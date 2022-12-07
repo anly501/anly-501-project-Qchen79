@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>501 project</title>
+
+    <!-- point to css stylesheet -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+
+<body>
+
+    <!-- <div class="box"> -->
+    <!-- <div class="center"> -->
+    <img src="./images/logo.jpg" alt="" class="logo">
+    <img src="./images/font.jpg" alt="" class="font">
+    <ul>
+        <li>
+            <!-- <a href="./index.html"><img src="./images/logo.jpg" alt=""></a> -->
+        </li>
+
+        <!-- link back to homepage -->
+        <li><a href="./index.html">About me</a></li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./introduction2.html">Introduction</a></li>
+
+
+        <!-- tab without dropdown  -->
+        <li><a href="https://github.com/anly501/anly-501-project-Qchen79.git">Code</a></li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="https://github.com/anly501/anly-501-project-Qchen79/tree/main/codes/01-data-gathering">Data</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./Datagathering.html">Data Gathering</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./Datacleaning.html">Data Cleaning</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./Exploringdata.html">Exploring Data</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./Naive_bayes.html">Naive Bayes</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./SVM.html">SVM</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./DT.html">Decision tree</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./clustering.html">Clustering</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./ARM.html">ARM</a>
+        </li>
+
+        <!-- tab without dropdown  -->
+        <li><a href="./conclusion.html">Conclusion</a>
+        </li>
+
+
+
+    </ul>
+
+
+
+    <h1 style="color:#0e0e10; text-align:justify; ">
+        <font size="5"><b>Conclusion</b></font>
+    </h1>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        What question I have answered:
+    <p>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        1. If there is significant difference in gender and age factors on drug use?
+    <p>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        2. AMITRIPTYLINE is the most effective drug among those four groups?
+    <p>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        3. Among AMITRIPTYLINE, BUPROPION, and CITALOPRAM those three method which one is the best?
+    <p>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        4. Which two drug use appear together the most on treatment of Depression.
+    <p>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        Considering the different age and gender, different drugs will definitely have different effects on different
+        groups. So I designed the first question. The whole group of dataset is divided into four groups, namely young
+        men, young women, old men and old women, which can help doctors to find out the suitable method for each group.
+        drug use is only one method of treating depression. If drug use is not very effective for a certain group, then
+        drug use can be excluded at the beginning of treatment consideration. This will also save time.
+    <p>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        In the case of helping doctors to determine the drug use that will be implemented. We will want to know the
+        effectiveness of each drug for different groups, so we designed a second question. We conclude that
+        AMITRIPTYLINE is the most effective method for young men. However, different drugs may be most effective for
+        different groups. In this case, we can target different groups with different drugs. The ultimate goal is also
+        to save time.
+    <p>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        The third question is without considering gender and age. Which drug would be more effective for all groups. The
+        goal of this question is to help the doctor find out which drug is more effective in the total population.
+        Identify the most effective one. This will help the doctor to understand the best and most common methods among
+        the many drug uses.
+    <p>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        The fourth question is to consider the case where two drugs are used together. Realistically, it is possible
+        that the effectiveness of using only one drug is not very high. So when considering the use of two drugs
+        together which two combinations together would be the best?
+    <p>
+
+    <h2 style="color:rgba(26, 81, 183, 0.895);; text-align:justify; ">
+        <font size="2"><b>Answer to Question1:If there is significant difference in gender and age factors on drug
+                use?</b></font>
+    </h2>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        First is for the conclusion of Naive Bayes method on the record data. This section basically explains about if
+        there is significant difference in gender and age factors on drug use. We can see that training data set and
+        test data set all have about the same accuracy which is about 53%. And for both training data set and test data
+        set it all have the highest accuracy of about 88% for the second group, namely, the older male group. It was
+        followed by young men, meaning men who is younger than 40, with an accuracy rate of about 25 percent. And the
+        last two group young women and old women have pretty bad accuracy. Which indicating that these drugs have no
+        significant change in women, so it can be said that the effect on women is not great.
+        <td>
+            <img src="./images/conclusion1.png" width="1000" height="300">
+        </td>
+    <p>
+
+    <h2 style="color:rgba(26, 81, 183, 0.895);; text-align:justify; ">
+        <font size="2"><b>Answer to Question2:AMITRIPTYLINE is the most effective drug among those four groups?</b>
+        </font>
+    </h2>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        Second is for the conclusion of SVM method and based on the accuracy above I use linear kernel to make
+        conclusion about AMITRIPTYLINE is the most effective drug among those four groups. And the result is that it has
+        the most significant effect on young male group. Since I only show one drug effectiveness in my website. And if
+        you want to know more about each drug use you can download my code and simply change the drug name according to
+        my data. And then you will get the result.
+
+    <p>
+        <td>
+            <img src="./images/conclusion2.png" width="1000" height="300">
+        </td>
+
+    <h2 style="color:rgba(26, 81, 183, 0.895);; text-align:justify; ">
+        <font size="2"><b>Answer to Question3:Among AMITRIPTYLINE, BUPROPION, and CITALOPRAM those three method which
+                one is the best?</b>
+        </font>
+    </h2>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        Third is for the conclusion of the Decision Tree method. This section answered about which drug among those
+        three drugs(AMITRIPTYLINE, BUPROPION, and CITALOPRAM) are most fit the Decision Tree method which means are more
+        effective among all group. The decision tree model is best fit for drug AMITRIPTYLINE compared to the other 2
+        drugs. Since AMITRIPTYLINE have the highest accuracy score which is 82.4%. So, AMITRIPTYLINE is the most
+        affective drug among those 3 drugs.
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        Also, in the group old women and young men have the highest and same f1 score which is 0.84. And since we have
+        the conclusion from SVM method that in the use of AMITRIPTYLINE has the most significant effect on young male
+        group. So we can conclude that in the case of AMITRIPTYLINE drug use, it can perform good for young men in
+        compare BUPROPION and CITALOPRAM.
+    <p>
+
+        <td>
+            <img src="./images/conclusion3.png" width="1000" height="300">
+        </td>
+    <p>
+
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        Fourth is for the conclusion of Clustering. It did not have conclusion about drug use and only help us to
+        cluster the dataset. And overall, the Kmeans method cluster the data point best. Since I have four groups and it
+        also indicate there will be 4 clusters. So based on this dataset, Kmeans method perform the best.
+    <p>
+
+    <h2 style="color:rgba(26, 81, 183, 0.895);; text-align:justify; ">
+        <font size="2"><b>Answer to Question4:Which two drug use appear together the most on treatment of
+                Depression?</b>
+        </font>
+    </h2>
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        For the conclusion of ARM method, we can conclude that CITALOPRAM and ESCITALOPRAM appear together the most on
+        treatment of Depression.
+        <td>
+            <img src="./images/conclusion4.png" width="1000" height="300">
+        </td>
+    <p>
+
+    <h1 style="color:#0e0e10; text-align:justify; ">
+        <font size="5"><b>At last...</b></font>
+    </h1>
+    <p style="color:rgba(7, 7, 7, 0.895);">
+        Now I have given answer for several questions. I think it can help doctors to make some recommendations on drug
+        use, although the drugs needed are different for different people. But after the data analysis, we can make some
+        narrow down of the drug use, which can treat the depression more efficiently and help the patient to get rid of
+        the depression in a shorter time. Of course, the analysis I did leaves a lot to be desired. And there are more
+        questions that can be analyzed.
+        If you want more in-depth analysis and discussion of this project, you can contact me through the homepage.
+
+    <p>
+
+
+</body>
+
+</html>
